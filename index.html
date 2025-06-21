@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Synkro - Bienvenido</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="logo">SYNKRO</h1>
+
+    <div class="form-toggle">
+      <button id="loginToggle">Iniciar Sesión</button>
+      <button id="registerToggle">Registrarse</button>
+    </div>
+
+    <!-- Login Form -->
+    <form id="loginForm" class="form active">
+      <h2>Inicia Sesión</h2>
+      <input type="text" placeholder="Nombre de usuario" id="loginUsername" required>
+      <input type="password" placeholder="Contraseña" id="loginPassword" required>
+      <button type="submit">Entrar</button>
+      <button onclick="location.href='contraseña.html'">¿Olvidaste tu contraseña?</button>
+    </form>
+
+    <!-- Register Form -->
+    <form id="registerForm" class="form">
+      <h2>Regístrate</h2>
+      <input type="text" placeholder="Nombre completo" id="regFullname" required>
+      <input type="text" placeholder="Nombre de usuario" id="regUsername" required>
+      <input type="password" placeholder="Contraseña" id="regPassword" required>
+      <input type="number" placeholder="Edad" id="regAge" required>
+      <select id="regSex">
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="otro">Otro</option>
+      </select>
+      <select id="regCountry">
+        <option value="España">España</option>
+        <option value="México">México</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Otro">Otro</option>
+      </select>
+      <input type="text" placeholder="Teléfono" id="regPhone" required>
+      <input type="email" placeholder="Correo electrónico" id="regEmail" required>
+      <button type="submit">Crear cuenta</button>
+    </form>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

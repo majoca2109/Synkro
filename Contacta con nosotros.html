@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacta con nosotros</title>
+  <link rel="stylesheet" href="css/Contacto.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-fila">
+      <img src="default-profile.png" id="profile-pic" alt="Perfil"/>
+      <div class="nova-info">
+        <img src="NovaPoints.png" id="nova-icon" alt="NovaPoints" />
+        <span id="nova-value">0</span>
+      </div>
+    </div>
+    <div class="header-fila">
+      <button id="btn-volver">Volver</button>
+      <button id="btn-cerrar-sesion">Cerrar sesión</button>
+    </div>
+    <div class="header-fila">
+      <h1>Contacta con nosotros</h1>
+    </div>
+  </header>
+
+  <main class="main-contenido">
+    <section class="contacto">
+      <p>¿Tienes dudas, sugerencias o encontraste un error? ¡Queremos saber de ti!</p>
+      <form id="form-contacto">
+        <input type="text" id="nombre" placeholder="Nombre de usuario" required />
+        <input type="email" id="email" placeholder="Tu correo electrónico" required />
+        <textarea id="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+        <button type="submit">Enviar</button>
+        <p id="form-status"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script src="js/Contacto.js"></script>
+</body>
+</html>

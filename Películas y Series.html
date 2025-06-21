@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Películas y Series</title>
+  <link rel="stylesheet" href="css/peliculas_series.css" />
+</head>
+<body>
+<header class="header">
+  <div class="header-fila">
+    <img src="default-profile.png" id="profile-pic" alt="Perfil" />
+    <div class="nova-info" style="margin-left: 1rem;">
+      <img src="NovaPoints.png" id="nova-icon" alt="NovaPoints" />
+      <span id="nova-value">0</span>
+    </div>
+  </div>
+  <div class="header-fila botones-header">
+    <button id="btn-volver">Volver</button>
+    <button id="btn-cerrar-sesion">Cerrar sesión</button>
+  </div>
+  <div class="header-fila botones-header" style="margin-top: 0.5rem;">
+    <button id="btn-synkro">Volver a Synkro</button>
+    <button id="btn-peliculas">Películas</button>
+    <button id="btn-series">Series</button>
+    <button id="btn-listas">Listas</button>
+  </div>
+</header>
+
+<main class="main-contenido">
+  <section>
+    <h2>Categorías</h2>
+    <div id="categorias-container" class="grid-tienda">
+      <!-- Categorías cargadas dinámicamente -->
+    </div>
+  </section>
+</main>
+
+<!-- Popup para mensajes -->
+<div id="popup" class="popup hidden">
+  <p id="popup-message"></p>
+  <div class="popup-botones">
+    <button id="popup-btn-cancelar" class="popup-btn">Cerrar</button>
+  </div>
+</div>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+
+<script src="js/peliculas_series.js"></script>
+</body>
+</html>

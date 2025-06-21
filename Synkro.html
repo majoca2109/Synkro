@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Synkro - Hub</title>
+  <link rel="stylesheet" href="css/Synkro.css">
+</head>
+<body>
+  <header class="header">
+    <div class="top-row">
+      <img id="profilePic" src="default-profile.png" alt="Perfil">
+      <div class="novapoints" id="novaPointsContainer">
+        <img src="NovaPoints.png" alt="NovaPoints">
+        <span id="novaPoints">0</span>
+      </div>
+    </div>
+    <div class="middle-row">
+      <h1>Synkro</h1>
+      <h2>App con gran variedad de contenido</h2>
+    </div>
+    <button id="logoutButton">Cerrar sesión</button>
+  </header>
+
+  <main class="sections" id="sectionsContainer"></main>
+
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h3 id="popupMessage">Mensaje</h3>
+      <div id="popupButtons">
+        <button id="popupContinue">Continuar</button>
+        <button onclick="closePopup()">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script src="js/Synkro.js"></script>
+</body>
+</html>

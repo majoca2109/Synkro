@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  background: linear-gradient(#0a1a2f, #142b47);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+.header {
+  text-align: center;
+  padding: 1rem;
+  background: #09182b;
+}
+
+.top-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.novapoints {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.novapoints img {
+  width: 30px;
+  height: 30px;
+}
+
+.middle-row h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #00aaff;
+}
+
+.middle-row h2 {
+  margin: 0;
+  font-weight: normal;
+  color: #a0c4ff;
+}
+
+#logoutButton {
+  margin-top: 1rem;
+  background: #ff4444;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.section-card {
+  width: 150px;
+  background: #1a2e4f;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px #00aaff;
+}
+
+.section-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.section-card p {
+  margin: 0.5rem;
+  font-weight: bold;
+}
+
+.popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: #1a2e4f;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 300px;
+  color: white;
+}
+
+.popup-content button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #00aaff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,262 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1128;
+  color: white;
+}
+
+.header {
+  background-color: #1e243d;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-fila {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+#btn-volver,
+#btn-cerrar-sesion {
+  background-color: #2186eb;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.nova-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+#nova-icon {
+  width: 30px;
+  height: 30px;
+}
+
+
+.botones-header {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.botones-header button {
+  background-color: #2186eb;
+  border: none;
+  padding: 0.5rem 1.3rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.botones-header button:hover {
+  background-color: #1764c0;
+}
+
+.titulo-central {
+  margin: 0.6rem 0 0 0;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  color: #39a8ff;
+}
+
+.main-contenido {
+  max-width: 900px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+.contenido-principal section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  border-bottom: 2px solid #2186eb;
+  padding-bottom: 0.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.descripcion p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.formas-ganar ul {
+  padding-left: 1.2rem;
+}
+
+.formas-ganar li {
+  margin-bottom: 0.7rem;
+}
+
+.opcion {
+  cursor: pointer;
+  color: #39a8ff;
+  font-weight: 700;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.opcion:hover {
+  color: #76b9ff;
+  text-decoration: underline;
+}
+
+.grid-tienda {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+
+.tienda-card {
+  background-color: #22263e;
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 0 10px rgba(33, 134, 235, 0.5);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 190px;
+}
+
+.tienda-card:hover {
+  transform: scale(1.05);
+}
+
+.tienda-card h3 {
+  margin: 0 0 0.8rem 0;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #39a8ff;
+}
+
+.tienda-card p {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+  flex-grow: 1;
+}
+
+.tienda-card button {
+  margin-top: 1rem;
+  background-color: #2edb82;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.tienda-card button:hover:not(:disabled) {
+  background-color: #24b063;
+}
+
+.tienda-card button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.popup {
+  position: fixed;
+  background-color: #1e243d;
+  padding: 1.5rem 2.5rem;
+  border-radius: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 0 15px #2186ebaa;
+  max-width: 320px;
+  color: white;
+  font-weight: 600;
+  animation: popupFadeIn 0.3s ease forwards;
+}
+
+@keyframes popupFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup p {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.popup-botones {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.popup-btn {
+  flex: 1;
+  padding: 0.5rem 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.25s ease;
+}
+
+#popup-btn-cancelar {
+  background-color: #e74c3c;
+  color: white;
+}
+
+#popup-btn-cancelar:hover {
+  background-color: #c0392b;
+}
+
+#popup-btn-aceptar {
+  background-color: #2edb82;
+  color: black;
+}
+
+#popup-btn-aceptar:hover {
+  background-color: #24b063;
+}

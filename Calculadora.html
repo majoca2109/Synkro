@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="css/Calculadora.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-fila">
+      <img src="default-profile.png" id="profile-pic" alt="Perfil"/>
+      <div class="nova-info">
+        <img src="NovaPoints.png" id="nova-icon" alt="NovaPoints" />
+        <span id="nova-value">0</span>
+      </div>
+    </div>
+    <div class="header-fila">
+      <button id="btn-volver">Volver</button>
+      <button id="btn-cerrar-sesion">Cerrar sesión</button>
+    </div>
+    <div class="header-fila">
+      <h1>Calculadora</h1>
+    </div>
+  </header>
+
+  <main class="main-contenido">
+    <section class="calculadora">
+      <input type="text" id="pantalla" readonly />
+      <div class="teclado">
+        <button>7</button><button>8</button><button>9</button><button>/</button>
+        <button>4</button><button>5</button><button>6</button><button>*</button>
+        <button>1</button><button>2</button><button>3</button><button>-</button>
+        <button>0</button><button>.</button><button>=</button><button>+</button>
+        <button id="borrar">C</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script src="js/Calculadora.js"></script>
+</body>
+</html>

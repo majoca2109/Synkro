@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d1128;
+  color: white;
+}
+
+.header {
+  background-color: #1e243d;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-fila {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+#nova-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.nova-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.botones-header button {
+  background-color: #2186eb;
+  border: none;
+  padding: 0.5rem 1.3rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.botones-header button:hover {
+  background-color: #1764c0;
+}
+
+.main-contenido {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+#buscador {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.grid-archivium {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* más pequeños */
+  gap: 1rem;
+}
+
+.archivium-card {
+  background-color: #1e243d;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+  box-shadow: 0 0 10px rgba(33, 134, 235, 0.3);
+  position: relative;
+}
+
+.archivium-card:hover {
+  transform: scale(1.05);
+}
+
+.archivium-card img {
+  width: 100%;
+  height: auto; /* Mostrar imagen completa */
+  display: block;
+}
+
+.archivium-card h3 {
+  margin: 0;
+  padding: 0.6rem;
+  font-size: 1rem;
+  background-color: #27304d;
+  color: #39a8ff;
+  text-align: center;
+}
+
+.archivium-card .texto-preview {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 0.8rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.archivium-card:hover .texto-preview {
+  max-height: 200px;
+  opacity: 1;
+  margin-bottom: 0.6rem;
+}

@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #0a1a2f, #142b47);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.perfil-container {
+  background: #1a2e4f;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00aaff;
+  width: 90%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.perfil-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #00aaff;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.username-nova {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.nova {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.nova-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.perfil-container p {
+  margin: 0.5rem 0;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.3rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  margin-top: 0.3rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: #00aaff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #007acc;
+}
+
+#logoutBtn {
+  background: #ff4444;
+}
+
+#logoutBtn:hover {
+  background: #cc0000;
+}
+
+#backBtn {
+  background: #888;
+  margin-top: 1rem;
+  width: 100%;
+}

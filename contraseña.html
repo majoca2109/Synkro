@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuperar Contraseña - Synkro</title>
+  <link rel="stylesheet" href="css/contraseña.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Recuperar Contraseña</h1>
+    
+    <form id="recoveryForm">
+      <input type="text" placeholder="Nombre de usuario" id="username" required>
+      <input type="email" placeholder="Correo electrónico" id="email" required>
+      <input type="password" placeholder="Nueva contraseña" id="newPassword" required>
+      <button type="submit">Actualizar contraseña</button>
+    </form>
+
+    <a href="index.html">← Volver al inicio</a>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script src="js/contraseña.js"></script>
+</body>
+</html>

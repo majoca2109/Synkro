@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil</title>
+  <link rel="stylesheet" href="css/perfil.css" />
+</head>
+<body>
+  <div class="perfil-container">
+    <input type="file" id="fileInput" accept="image/*" style="display: none;" />
+    <img id="profilePic" src="default-profile.png" alt="Perfil" />
+
+    <div class="username-nova">
+      <span id="username">username</span>
+      <div class="nova" onclick="location.href='NovaPoints.html'">
+        <img src="NovaPoints.png" alt="Nova" class="nova-icon" />
+        <span id="novaPoints">0</span>
+      </div>
+    </div>
+
+    <p><strong>Nombre completo:</strong> <span id="fullnameDisplay"></span><input type="text" id="fullname" style="display: none;" /></p>
+    <p><strong>Edad:</strong> <span id="ageDisplay"></span><input type="number" id="age" style="display: none;" /></p>
+    <p><strong>Sexo:</strong> <span id="sexoDisplay"></span>
+      <select id="sexo" style="display: none;">
+        <option value="Masculino">Masculino</option>
+        <option value="Femenino">Femenino</option>
+        <option value="Otro">Otro</option>
+      </select>
+    </p>
+    <p><strong>País:</strong> <span id="countryDisplay"></span>
+      <select id="country" style="display: none;">
+        <option value="Argentina">Argentina</option>
+        <option value="España">España</option>
+        <option value="México">México</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Otro">Otro</option>
+      </select>
+    </p>
+    <p><strong>Teléfono:</strong> <span id="phoneDisplay"></span><input type="tel" id="phone" style="display: none;" /></p>
+    <p><strong>Email:</strong> <span id="emailDisplay"></span><input type="email" id="email" style="display: none;" /></p>
+
+    <div class="buttons">
+      <button id="editBtn">Editar perfil</button>
+      <button id="logoutBtn">Cerrar sesión</button>
+    </div>
+
+    <button id="backBtn">Volver</button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script src="js/perfil.js"></script>
+</body>
+</html>
