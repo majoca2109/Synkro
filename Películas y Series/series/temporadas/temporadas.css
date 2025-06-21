@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  background-color: #0d1128;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+.header {
+  background-color: #1e243d;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-fila {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.nova-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#nova-icon {
+  width: 30px;
+  height: 30px;
+}
+
+button {
+  background-color: #2186eb;
+  color: white;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+main.contenido {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Información de temporada */
+.temporada-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.temporada-info img {
+  width: 280px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.info {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Episodios */
+.episodios {
+  margin-top: 2rem;
+}
+
+.episodio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.episodio img {
+  width: 280px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.episodio-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.episodio-info h3 {
+  margin-top: 0;
+}
+
+.episodio-info p {
+  margin: 0.5rem 0;
+}
+
+.reproductor {
+  margin-top: 1rem;
+  display: none;
+}
+
+.reproductor iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}

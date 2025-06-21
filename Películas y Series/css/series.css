@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  background-color: #0d1128;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+.header {
+  background-color: #1e243d;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-fila {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.nova-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#nova-icon {
+  width: 30px;
+  height: 30px;
+}
+
+button {
+  background-color: #2186eb;
+  color: white;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+#buscador {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.series-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.pelicula-card {
+  background-color: #22263e;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: 160px;
+  flex-shrink: 0;
+}
+
+.pelicula-card:hover {
+  transform: scale(1.05);
+}
+
+.pelicula-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.pelicula-card .titulo {
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-content {
+  background-color: #1e243d;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.popup-content button {
+  margin: 1rem 0.5rem;
+}

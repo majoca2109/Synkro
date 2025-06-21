@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ahorcado</title>
+  <link rel="stylesheet" href="Ahorcado.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-fila">
+      <img src="../../default-profile.png" id="profile-pic" alt="Perfil" onclick="location.href='../../perfil.html'" />
+      <div class="nova-info" onclick="location.href='../../NovaPoints.html'">
+        <img src="../../NovaPoints.png" id="nova-icon" alt="NovaPoints" />
+        <span id="nova-value">0</span>
+      </div>
+    </div>
+    <div class="header-fila">
+      <button onclick="history.back()">Volver</button>
+      <button id="cerrar-sesion">Cerrar sesión</button>
+    </div>
+  </header>
+
+  <main>
+    <h1>Juego del Ahorcado</h1>
+    <div id="game-container">
+      <canvas id="hangman-canvas" width="200" height="250"></canvas>
+      <div id="word-display"></div>
+      <div id="letter-buttons"></div>
+      <p id="message"></p>
+      <button id="restart-button" class="hidden">Jugar de nuevo</button>
+    </div>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script src="Ahorcado.js"></script>
+</body>
+</html>

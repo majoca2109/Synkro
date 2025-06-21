@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temporada</title>
+  <link rel="stylesheet" href="temporadas.css"/>
+</head>
+<body>
+  <header class="header">
+    <div class="header-fila">
+      <img src="../../../default-profile.png" id="profile-pic" alt="Perfil" onclick="location.href='../../../perfil.html'" />
+      <div class="nova-info" onclick="location.href='../../../NovaPoints.html'">
+        <img src="../../../NovaPoints.png" id="nova-icon" alt="NovaPoints" />
+        <span id="nova-value">0</span>
+      </div>
+    </div>
+    <div class="header-fila">
+      <button onclick="history.back()">Volver</button>
+      <button id="cerrar-sesion">Cerrar sesión</button>
+    </div>
+    <div class="header-fila">
+      <button onclick="window.location.href='../../../Películas y Series.html'">Películas y Series</button>
+      <button onclick="window.location.href='../../películas.html'">Películas</button>
+      <button onclick="window.location.href='../../series.html'">Series</button>
+      <button onclick="window.location.href='../../listas.html'">Listas</button>
+    </div>
+  </header>
+
+  <main class="contenido">
+    <!-- Información de la temporada -->
+    <section class="temporada-info">
+      <img id="imagenTemporada" src="" alt="Imagen Temporada">
+      <div class="info">
+        <h1 id="nombreSerie"></h1>
+        <h2 id="numeroTemporada"></h2>
+        <p id="resumenTemporada"></p>
+        <p><strong>Episodios:</strong> <span id="numeroEpisodios"></span></p>
+      </div>
+    </section>
+
+    <!-- Episodios -->
+    <div class="episodios" id="episodios-container">
+      <h2>Episodios</h2>
+    </div>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script src="temporadas.js"></script>
+</body>
+</html>

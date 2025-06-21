@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vistas</title>
+  <link rel="stylesheet" href="Vistas.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-fila">
+      <img src="../../default-profile.png" id="profile-pic" alt="Perfil" onclick="location.href='../../perfil.html'" />
+      <div class="nova-info" onclick="location.href='../../NovaPoints.html'">
+        <img src="../../NovaPoints.png" id="nova-icon" alt="NovaPoints" />
+        <span id="nova-value">0</span>
+      </div>
+    </div>
+    <div class="header-fila">
+      <button onclick="history.back()">Volver</button>
+      <button id="cerrar-sesion">Cerrar sesión</button>
+    </div>
+    <div class="header-fila">
+      <button onclick="window.location.href='../../Películas y Series.html'">Películas y Series</button>
+      <button onclick="window.location.href='../películas.html'">Películas</button>
+      <button onclick="window.location.href='../series.html'">Series</button>
+      <button onclick="window.location.href='../listas.html'">Listas</button>
+    </div>
+  </header>
+
+  <main class="contenido">
+    <input type="text" id="buscador" placeholder="Buscar vistas..." />
+    <section id="vistas-container" class="contenedor-peliculas"></section>
+  </main>
+
+  <div id="popup-subs" class="popup hidden">
+    <p id="popup-text"></p>
+    <div class="popup-buttons">
+      <button onclick="window.location.href='../../NovaPoints.html'">Continuar</button>
+      <button onclick="cerrarPopup()">Cancelar</button>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script src="Vistas.js"></script>
+</body>
+</html>

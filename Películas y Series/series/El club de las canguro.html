@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Serie</title>
+  <link rel="stylesheet" href="serie.css"/>
+</head>
+<body>
+  <header class="header">
+    <div class="header-fila">
+      <img src="../../default-profile.png" id="profile-pic" alt="Perfil" />
+      <div class="nova-info">
+        <img src="../../NovaPoints.png" id="nova-icon" alt="NovaPoints" />
+        <span id="nova-value">0</span>
+      </div>
+    </div>
+    <div class="header-fila">
+      <button onclick="history.back()">Volver</button>
+      <button id="cerrar-sesion">Cerrar sesión</button>
+    </div>
+    <div class="header-fila">
+      <button onclick="window.location.href='../../Películas y Series.html'">Películas y Series</button>
+      <button onclick="window.location.href='../películas.html'">Películas</button>
+      <button onclick="window.location.href='../series.html'">Series</button>
+      <button onclick="window.location.href='../listas.html'">Listas</button>
+    </div>
+  </header>
+
+  <main class="contenido">
+    <!-- Información de la serie -->
+    <section class="serie-info">
+      <img id="imagenCartelera" src="" alt="Imagen Serie">
+      <div class="info">
+        <h1 id="nombre"></h1>
+        <p id="sinopsis"></p>
+        <p id="edadMinima"></p>
+        <p><strong>Temporadas:</strong> <span id="numeroTemporadas"></span></p>
+        <p><strong>Episodios:</strong> <span id="numeroEpisodios"></span></p>
+
+        <div class="tags">
+          <div><strong>Géneros:</strong> <span id="generos"></span></div>
+          <div><strong>Listas:</strong> <span id="listas"></span></div>
+          <div><strong>Actores:</strong> <span id="actores"></span></div>
+        </div>
+
+        <div class="acciones">
+          <button id="btn-favorito">Añadir a favoritos</button>
+          <button id="btn-visto">Vista</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Temporadas -->
+    <section class="temporadas" id="temporadas-container">
+      <h2>Temporadas</h2>
+    </section>
+  </main>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script src="serie.js"></script>
+</body>
+</html>

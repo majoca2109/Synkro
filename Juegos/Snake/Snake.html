@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snake</title>
+  <link rel="stylesheet" href="Snake.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-fila">
+      <img src="../../default-profile.png" id="profile-pic" alt="Perfil" onclick="location.href='../../perfil.html'" />
+      <div class="nova-info" onclick="location.href='../../NovaPoints.html'">
+        <img src="../../NovaPoints.png" id="nova-icon" alt="NovaPoints" />
+        <span id="nova-value">0</span>
+      </div>
+    </div>
+    <div class="header-fila">
+      <button onclick="history.back()">Volver</button>
+      <button id="cerrar-sesion">Cerrar sesión</button>
+    </div>
+  </header>
+
+  <main>
+    <h1>Snake</h1>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div id="score">Puntuación: 0</div>
+    <button id="startBtn">Iniciar Juego</button>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script src="Snake.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  background-color: #0d1128;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+header.header {
+  background-color: #1e243d;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-fila {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.nova-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+#nova-icon {
+  width: 30px;
+  height: 30px;
+}
+
+button {
+  background-color: #2186eb;
+  color: white;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #1a6ed8;
+  transform: scale(1.05);
+}
+
+main {
+  max-width: 800px;
+  margin: 3rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  border-bottom: 2px solid #2186eb;
+  padding-bottom: 1rem;
+}
+
+#ppt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: #151b33;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 128, 255, 0.2);
+}
+
+#choices {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+#choices button {
+  font-size: 2.5rem;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+#result {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #00ffcc;
+  min-height: 3rem;
+}
+
+#play-again {
+  background-color: #0dd85d;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+#play-again.hidden {
+  display: none;
+}
+
+#animation {
+  font-size: 3rem;
+  animation: punch 0.6s infinite alternate;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes punch {
+  0% { transform: translateX(-15px); }
+  100% { transform: translateX(15px); }
+}

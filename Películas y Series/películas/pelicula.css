@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  background-color: #0d1128;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+.header {
+  background-color: #1e243d;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-fila {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.nova-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#nova-icon {
+  width: 30px;
+  height: 30px;
+}
+
+button {
+  background-color: #2186eb;
+  color: white;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+main.contenido {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.pelicula-detalle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.pelicula-detalle img {
+  width: 280px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.tags span span {
+  background-color: #1e243d;
+  padding: 0.4rem 0.8rem;
+  margin: 0.2rem;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tags span span:hover {
+  background-color: #2186eb;
+}
+
+.video-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Mantener estilos anteriores */
+
+.botones-control {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.botones-control button {
+  flex: 1 1 auto;
+  min-width: 120px;
+  background-color: #2186eb;
+  color: white;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botones-control button:hover {
+  background-color: #1762b6;
+}

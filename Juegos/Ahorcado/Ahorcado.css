@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  background-color: #0d1128;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+.header {
+  background-color: #1e243d;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header-fila {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.nova-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+#nova-icon {
+  width: 30px;
+  height: 30px;
+}
+
+button {
+  background-color: #2186eb;
+  color: white;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+#game-container {
+  margin-top: 2rem;
+}
+
+#hangman-canvas {
+  background-color: #111730;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+#word-display {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#letter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#letter-buttons button {
+  width: 40px;
+  height: 40px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#letter-buttons button.correct {
+  background-color: green;
+}
+
+#letter-buttons button.wrong {
+  background-color: red;
+}
+
+#message {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none;
+}

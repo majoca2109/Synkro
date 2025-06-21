@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Película</title>
+  <link rel="stylesheet" href="pelicula.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-fila">
+      <img src="../../default-profile.png" id="profile-pic" alt="Perfil" />
+      <div class="nova-info">
+        <img src="../../NovaPoints.png" id="nova-icon" alt="NovaPoints" />
+        <span id="nova-value">0</span>
+      </div>
+    </div>
+    <div class="header-fila">
+      <button onclick="history.back()">Volver</button>
+      <button id="cerrar-sesion">Cerrar sesión</button>
+    </div>
+    <div class="header-fila">
+      <button onclick="window.location.href='../../Películas y Series.html'">Películas y Series</button>
+      <button onclick="window.location.href='../películas.html'">Películas</button>
+      <button onclick="window.location.href='../series.html'">Series</button>
+      <button onclick="window.location.href='../listas.html'">Listas</button>
+    </div>
+  </header>
+
+  <main class="contenido">
+    <div class="pelicula-detalle">
+      <img id="imagen" src="" alt="Imagen Película" />
+      <div class="info">
+        <h1 id="nombre"></h1>
+        <p><strong>Fecha de estreno:</strong> <span id="fechaEstreno"></span></p>
+        <p><strong>Duración:</strong> <span id="duracion"></span></p>
+        <p><strong>Edad mínima:</strong> <span id="edadMinima"></span> años</p>
+        <p><strong>Sinopsis:</strong></p>
+        <p id="sinopsis"></p>
+
+        <div class="tags">
+          <div><strong>Géneros:</strong> <span id="generos"></span></div>
+          <div><strong>Listas:</strong> <span id="listas"></span></div>
+          <div><strong>Actores:</strong> <span id="actores"></span></div>
+        </div>
+
+        <div class="botones-control">
+          <button id="ver-btn">Ver</button>
+          <button id="favorito-btn">Añadir a Favoritos</button>
+          <button id="visto-btn">Añadir a Vistas</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="video-container" class="video-container hidden">
+      <iframe id="video-player" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </main>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script src="pelicula.js"></script>
+</body>
+</html>
